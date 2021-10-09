@@ -1,5 +1,5 @@
 # Data 512 A2
-By; Andrew Zhou
+By: Andrew Zhou
 
 # Data Sources
 This repository uses two data sources
