@@ -2,7 +2,7 @@
 By: Andrew Zhou
 
 # Data Sources
-This repository uses two data sources
+This repository uses two data sources.
 
 1) The Wikipedia politicians by country dataset can be found on [Figshare](https://figshare.com/articles/dataset/Untitled_Item/5513449). Download and unzip it to extract the data file, which is called page_data.csv. You can also find the file in my repo at [data/page_data.csv](https://github.com/azhou5211/data-512-a2/blob/main/data/page_data.csv).  
 Notes:
@@ -15,6 +15,7 @@ Similarly, WPDS_2020_data.csv contains some rows that provide cumulative regiona
 
 # Article Quality
 I obtained article quality in the Wikipedia politicians by country dataset by using a machine learning system called ORES. The article quality estimates are, from best to worst:  
+
 FA - Featured article  
 GA - Good article  
 B - B-class article  
@@ -30,7 +31,7 @@ You can find my final dataset in [output_files/wp_wpds_politicians_by_country.cs
 Merge the wikipedia data and population data together. Both have fields containing country names for just that purpose. After merging the data, you'll invariably run into entries which cannot be merged. Either the population dataset does not have an entry for the equivalent Wikipedia country, or vise versa.
 
 Please remove any rows that do not have matching data, and output them to a CSV file called:
-```wp_wpds_countries-no_match.csv```
+```wp_wpds_countries-no_match.csv```  
 Consolidate the remaining data into a single CSV file called:
 ```wp_wpds_politicians_by_country.csv```
 
