@@ -25,6 +25,8 @@ Stub - Stub-class article
 
 You can obtain these values by using ORES REST API endpoint. You should review the ORES REST [documentation](https://ores.wikimedia.org/v3/#!/scoring/get_v3_scores_context_revid_model). It expects a revision ID, which is the third column in the Wikipedia dataset, a model, which is "articlequality", and context which is "enwiki"
 
+Note: It's possible that you will be unable to get a score for a particular article. You can find a list of articles that did not get a score for me at [notebooks/Non-Predicted ORES pages.csv](https://github.com/azhou5211/data-512-a2/blob/main/notebooks/Non-Predicted%20ORES%20pages.csv).
+
 # Combining the Datasets (Data Processing)
 You can find my final dataset in [output_files/wp_wpds_politicians_by_country.csv](https://github.com/azhou5211/data-512-a2/blob/main/output_files/wp_wpds_politicians_by_country.csv).
 
