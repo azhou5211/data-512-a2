@@ -55,9 +55,12 @@ Notes:
 You can find my notebook [here](https://github.com/azhou5211/data-512-a2/blob/main/notebooks/hcds-a2-bias.ipynb). The notebook contains all my methodology for cleaning, processing, merging, and analysis.
 
 # Reflection
-- What biases did you expect to find in the data (before you started working with it), and why?
+- What biases did you expect to find in the data (before you started working with it), and why?    
+
 One of the first things I took notice was the fact that we were using the English Wikipedia. There were so many other wikipedia options, and just by simply choosing the English Wikipedia, we could be introducing unintended bias. It is possible there are a lot of articles that are not in English, since a lot of other countries are likely to use a different language other than English. It is also possible the article quality may be severly skewed due to some articles not having proper english to them, as English is not always a native language to a lot of people. 
-- What (potential) sources of bias did you discover in the course of your data processing and analysis?
+- What (potential) sources of bias did you discover in the course of your data processing and analysis?    
+
 It was weird for me that we were obtaining article quality through a trained machine learning algorithm. I did not look at machine learning algorithm in depth, but I would like to know how the model classifies article quality. Is there perhaps a better method of obtaining article quality then relying on a machine learning algorithm? There could be bias trained in the machine learning algorithm, and therefore the article quality given by ORES could be bias.
-- Can you think of a realistic data science research situation where using these data (to train a model, perform a hypothesis-driven research, or make business decisions) might create biased or misleading results, due to the inherent gaps and limitations of the data?
+- Can you think of a realistic data science research situation where using these data (to train a model, perform a hypothesis-driven research, or make business decisions) might create biased or misleading results, due to the inherent gaps and limitations of the data?    
+
 I can see that if we used the data without serious modifications to remove sources of bias and limitations, a model that is trained on this data would be extremely bias. If someone was trying to analyze countries with higher proportions of quality articles, the ORES quality and the English wikipedia are likely going to give them skewed results. Their conclusion of which countries produce higher proportions of quality articles would likely be extremely biased and misleading. Another issue, I can see is the proportion of high quality papers to population. This proportion is strongly skewed as well, since there are some countries such as India and China that have extremely high population. Those proportions will make those countries extremely low, and likely not a good metric to be used.
